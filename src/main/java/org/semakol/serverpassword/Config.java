@@ -21,8 +21,20 @@ public final class Config {
 
     private Config() {}
 
+    // Subscribed to Loading and Reloading individually, never to the ModConfigEvent base class:
+    // Unloading is also a subclass, and it fires as the server stops, once the values can no longer be
+    // read. Reading one there throws and takes the server thread down with it.
     @SubscribeEvent
-    static void onLoad(final ModConfigEvent event) {
+    static void onLoad(final ModConfigEvent.Loading event) {
+        sync(event);
+    }
+
+    @SubscribeEvent
+    static void onReload(final ModConfigEvent.Reloading event) {
+        sync(event);
+    }
+
+    private static void sync(ModConfigEvent event) {
         if (event.getConfig().getSpec() == SPEC) {
             allowNewRegistrations = ALLOW_NEW_REGISTRATIONS.get();
         }
