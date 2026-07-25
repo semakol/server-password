@@ -1,0 +1,32 @@
+{
+  "serverpassword.gui.button": "Пароль",
+  "serverpassword.gui.button.tooltip": "Задать пароль, который отправляется при входе на сервер",
+
+  "serverpassword.gui.entry.title": "Пароль для серверов",
+  "serverpassword.gui.entry.explain.what": "На сервере без проверки лицензии ник может занять кто угодно. Пароль закрепляет его за вами.",
+  "serverpassword.gui.entry.explain.first": "Первый вход запомнит этот пароль за вашим ником — дальше без него не зайти.",
+  "serverpassword.gui.entry.explain.change": "Сменить или сбросить его потом может только администратор, так что выбирайте так, чтобы не забыть.",
+  "serverpassword.gui.entry.password": "Пароль",
+  "serverpassword.gui.entry.reveal": "Показать пароль",
+  "serverpassword.gui.entry.hide": "Скрыть пароль",
+  "serverpassword.gui.entry.save": "Сохранить",
+  "serverpassword.gui.entry.plaintext_warning": "Хранится без шифрования в config/serverpassword-local.json",
+  "serverpassword.gui.entry.error.too_short": "Минимум %s символа.",
+
+  "serverpassword.disconnect.wrong_password": "Неверный пароль для этого ника.",
+  "serverpassword.disconnect.registration_closed": "Этот ник не зарегистрирован, а новые регистрации закрыты.",
+  "serverpassword.disconnect.password_reset": "Администратор сбросил ваш пароль. Задайте новый и зайдите снова.",
+  "serverpassword.disconnect.retry": "Этот ник только что зарегистрировал кто-то другой. Попробуйте снова.",
+  "serverpassword.disconnect.protocol_error": "Проверка пароля не удалась.",
+  "serverpassword.disconnect.not_ready": "Сервер пока не готов проверять пароли.",
+  "serverpassword.disconnect.storage_broken": "Файл паролей на сервере повреждён. Обратитесь к администратору.",
+  "serverpassword.disconnect.client_no_password": "Пароль не задан. Задайте его кнопкой «Пароль» в меню сетевой игры.",
+  "serverpassword.disconnect.client_no_password_new": "Серверу нужен пароль. Задайте его кнопкой «Пароль» в меню сетевой игры: первый вход его зарегистрирует.",
+  "serverpassword.disconnect.client_error": "Не удалось вычислить подтверждение пароля.",
+
+  "serverpassword.command.unavailable": "Хранилище паролей не загружено.",
+  "serverpassword.command.reset.unknown": "Для «%s» пароль не сохранён.",
+  "serverpassword.command.reset.success": "Пароль для «%s» сброшен. Следующий вход задаст новый.",
+  "serverpassword.command.list": "Зарегистрировано игроков: %s — %s",
+  "serverpassword.command.list.empty": "Пока никто не зарегистрировал пароль."
+}

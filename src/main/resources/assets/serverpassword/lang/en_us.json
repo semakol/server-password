@@ -1,0 +1,32 @@
+{
+  "serverpassword.gui.button": "Password",
+  "serverpassword.gui.button.tooltip": "Set the password sent when joining a server",
+
+  "serverpassword.gui.entry.title": "Server Password",
+  "serverpassword.gui.entry.explain.what": "On a server without licence checks anyone can take your name. This password claims it for you.",
+  "serverpassword.gui.entry.explain.first": "Your first login registers this password for your name; after that it is required.",
+  "serverpassword.gui.entry.explain.change": "Only an operator can change or reset it later, so pick one you will remember.",
+  "serverpassword.gui.entry.password": "Password",
+  "serverpassword.gui.entry.reveal": "Show password",
+  "serverpassword.gui.entry.hide": "Hide password",
+  "serverpassword.gui.entry.save": "Save",
+  "serverpassword.gui.entry.plaintext_warning": "Saved unencrypted in config/serverpassword-local.json",
+  "serverpassword.gui.entry.error.too_short": "Use at least %s characters.",
+
+  "serverpassword.disconnect.wrong_password": "Wrong password for this name.",
+  "serverpassword.disconnect.registration_closed": "This name is not registered and new registrations are closed.",
+  "serverpassword.disconnect.password_reset": "An operator reset your password. Set a new one and rejoin.",
+  "serverpassword.disconnect.retry": "That name was just registered by someone else. Please try again.",
+  "serverpassword.disconnect.protocol_error": "Password handshake failed.",
+  "serverpassword.disconnect.not_ready": "The server is not ready to check passwords yet.",
+  "serverpassword.disconnect.storage_broken": "The server's password file is unreadable. Ask an operator to fix it.",
+  "serverpassword.disconnect.client_no_password": "No password set. Set one with the Password button on the Multiplayer screen.",
+  "serverpassword.disconnect.client_no_password_new": "This server needs a password. Set one with the Password button on the Multiplayer screen; your first login registers it.",
+  "serverpassword.disconnect.client_error": "Failed to compute the password proof.",
+
+  "serverpassword.command.unavailable": "The password store is not loaded.",
+  "serverpassword.command.reset.unknown": "No password is stored for '%s'.",
+  "serverpassword.command.reset.success": "Cleared the password for '%s'. Their next login registers a new one.",
+  "serverpassword.command.list": "%s registered player(s): %s",
+  "serverpassword.command.list.empty": "No players have registered a password yet."
+}
